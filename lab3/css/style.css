@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Rubik:wght@300;400;500;700&family=Titillium+Web&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kadwa', serif;
+}
+.main {
+    height: 100vh;
+    display: flex;
+}
+.sidebar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 120px;
+    height: 100%;
+    align-items: center;
+    padding: 15px 15px;
+}
+.logo {
+    width: 79px;
+    height: 79px;
+}
+.menu {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+
+}
+
+.item + .item{
+    margin-top: 30px;
+}
+.item__link {
+}
+
+.content {
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+.content__title {
+    font-size: 62px;
+    line-height: 90px;
+}
+.content__subtile {
+    font-size: 32px;
+}
+.content__img {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    
+}
+.content__text {
+    font-size: 20px;
+}
+
+@media(max-width: 1000px){
+    .content__title {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .content__subtile {
+        font-size: 22px;
+    }
+    .content__text {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 800px){
+    .content__title {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .content__subtile {
+        font-size: 22px;
+    }
+    .content__text {
+        font-size: 10px;
+    }
+
+    .content__img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        
+    }
+    .content {
+    padding: 15px 10px;
+    margin: 0 auto;
+}
+}
+
+
+@media(max-width: 560px){
+    .content__title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .content__subtile {
+        font-size: 12px;
+    }
+    .content__text {
+        font-size: 10px;
+    }
+
+    .content__img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        
+    }
+    .content {
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+}
